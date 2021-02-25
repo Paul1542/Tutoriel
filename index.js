@@ -4,13 +4,7 @@ const config = JSON.parse(fs.readFileSync("config.json", "utf-8"));
 const Discord = require("discord.js");
 const { Client } = ("discord.js");
 const client = new Discord.Client();
-const prefix = (config.prefix);
-const token = (config.bot_token);
-const color = (config.color);
-const name = (config.name);
-const sChannel = (config.suggestionChannel);
-const SBon = (config.suggestionbot)
-
+var prefix = ".";
 
 client.on("ready", () => {
     console.log("#################################");
